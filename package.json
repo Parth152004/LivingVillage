@@ -1,0 +1,28 @@
+{
+  "name": "living-village",
+  "version": "0.1.0",
+  "description": "Living Village - Deterministic Simulation Foundation & First Playable Slice",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:core": "tsc",
+    "build:client": "vite build",
+    "test": "tsx --test tests/**/*.test.ts",
+    "test:unit": "tsx --test tests/unit/**/*.test.ts",
+    "test:integration": "tsx --test tests/integration/**/*.test.ts",
+    "test:determinism": "tsx --test tests/determinism/**/*.test.ts",
+    "test:invariants": "tsx --test tests/invariants/**/*.test.ts",
+    "test:perf": "tsx --test tests/performance/**/*.test.ts",
+    "run:headless": "tsx scripts/run_headless.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7"
+  },
+  "dependencies": {
+    "pixi.js": "^8.6.6"
+  }
+}
